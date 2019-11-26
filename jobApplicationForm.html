@@ -3,7 +3,7 @@
 <head>
 <style>
 body {
-  background-color: lightgreen;
+  background-color: skyblue;
 }
 </style>
 	<meta charset="utf-8">
@@ -22,14 +22,24 @@ h2 {
 	<fieldset>
 	<style>
 	legend {
-  	color: blue;
+  	color: red;
 }
 
 	label {
-  	color: green;
+  	color: black;
 }
-	</style>
-		<legend>Account</legend>
+
+		<style>
+	.center {
+  	margin: auto;
+  	width: 60%;
+  	border: 3px solid #73AD21;
+  	padding: 10px;
+	}	
+</style>
+			<label> First Name:</label> 
+			<input type="text" name="first_name">
+		</div>
 		<div class="center">
 		<style>
 	.center {
@@ -39,7 +49,35 @@ h2 {
   	padding: 10px;
 	}	
 </style>
-			<label>Email:</label> 
+			<label> Last Name:</label> 
+			<input type="text" name="last_name">
+		</div>
+		<div class="center">
+		<style>
+	.center {
+  	margin: auto;
+  	width: 60%;
+  	border: 3px solid #73AD21;
+  	padding: 10px;
+	}	
+</style>
+			<label>Gender:</label> 
+			<select name="gender">
+				<option value="" selected="true">Choose Your Gender</option>
+				<option value="M">Male</option>
+				<option value="FM">Female</option>
+			</select>
+		</div>
+		<div class="center">
+		<style>
+	.center {
+  	margin: auto;
+  	width: 60%;
+  	border: 3px solid #73AD21;
+  	padding: 10px;
+	}	
+</style>
+			<label> Email Address:</label> 
 			<input type="text" name="email">
 		</div>
 		<div class="center">
@@ -51,8 +89,8 @@ h2 {
   	padding: 10px;
 	}	
 </style>
-			<label>Password:</label> 
-			<input type="password" name="password">
+			<label> Phone Number:</label> 
+			<input type="text" name="phone_number">
 		</div>
 		<div class="center">
 		<style>
@@ -63,44 +101,8 @@ h2 {
   	padding: 10px;
 	}	
 </style>
-			<label>Repeat password:</label> 
-			<input type="password" name="password_r">
-		</div>
-	</fieldset>
-
-	<fieldset>
-		<legend>Personal Information</legend>
-	<div class="center">
-		<style>
-	.center {
-  	margin: auto;
-  	width: 60%;
-  	border: 3px solid #73AD21;
-  	padding: 10px;
-	}	
-</style>
-		<style>
-	.center {
-  	margin: auto;
-  	width: 60%;
-  	border: 3px solid #73AD21;
-  	padding: 10px;
-	}	
-</style>
-			<label>Full Name:</label> 
-			<input type="text" name="name">
-		</div>
-		<div class="center">
-		<style>
-	.center {
-  	margin: auto;
-  	width: 60%;
-  	border: 3px solid #73AD21;
-  	padding: 10px;
-	}	
-</style>
-			<label>Street Address:</label> 
-			<input type="text" name="street">
+			<label>Address:</label> 
+			<input type="text" name="address">
 		</div>
 		<div class="center">
 		<style>
@@ -188,7 +190,7 @@ h2 {
   	padding: 10px;
 	}	
 </style>
-			<label>ZIP:</label> 
+			<label>ZIP CODE:</label> 
 			<input type="text" name="zip">
 		</div>
 	</fieldset>
