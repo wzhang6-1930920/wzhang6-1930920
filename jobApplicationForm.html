@@ -1,9 +1,11 @@
+
+
 <!DOCTYPE html>
 <html>
 <head>
 <style>
 body {
-  background-color: skyblue;
+  background-color: #FAFAD2;
 }
 </style>
 	<meta charset="utf-8">
@@ -15,12 +17,17 @@ h2 {
   color: green;
 }
 </style>
-<h2>Job Application</h2>
+<h2>Job Application Form</h2>
 
 <form action="http://gclass.alexburner.com/formtest.php" method="post">
 
 	<fieldset>
+	<legend>ABOUT YOU</legend>
 	<style>
+	fieldset {
+		background: url(quad1.jpeg) no-repeat;
+		background-size: cover;
+	}
 	legend {
   	color: red;
 }
@@ -39,8 +46,20 @@ h2 {
 	<fieldset>
 		<legend>Personal Information</legend>
 </style>
+			<div class="center">
+		<style>
+	.center {
+  	margin: auto;
+  	width: 60%;
+  	border: 3px solid #73AD21;
+  	padding: 10px;
+	}	
+	<fieldset>
+		<legend>About You</legend>
+		<div class="field">
+</style>
 			<label> First Name:</label> 
-			<input type="text" name="first_name">
+			<input type="text" name="last_name">
 		</div>
 		<div class="center">
 		<style>
@@ -63,12 +82,8 @@ h2 {
   	padding: 10px;
 	}	
 </style>
-			<label>Gender:</label> 
-			<select name="gender">
-				<option value="" selected="true">Choose Your Gender</option>
-				<option value="M">Male</option>
-				<option value="FM">Female</option>
-			</select>
+			<label> Position applied for:</label> 
+			<input type="text" name="position">
 		</div>
 		<div class="center">
 		<style>
@@ -196,22 +211,13 @@ h2 {
 			<input type="text" name="zip">
 		</div>
 	</fieldset>
-
+	
 	<fieldset>
-		<legend>Availability</legend>
-		<div class="field">
-			<label>Are you legally able to be employed in this country?</label> 
-			<input type="radio" name="legal" value="yes">Yes
-			<input type="radio" name="legal" value="no">No
-		</div>
-		<div class="field">
-			<label>What type of position are you seeking? (check all that apply)</label>
-			<ul>
-				<li><input type="checkbox" name="position_pt" value="parttime">Part time</li>
-				<li><input type="checkbox" name="position_ft" value="fulltime">Full time</li>
-				<li><input type="checkbox" name="position_sl" value="seasonal">Seasonal</li>
-				<li><input type="checkbox" name="position_tp" value="temporary">Temporary</li>
-			</ul>
+		<legend>ABOUT YOUR WORK HISTORY</legend>
+		<div class="center">
+</style>
+			<label>Present/Last Employer:</label> 
+			<input type="text" name="present">
 		</div>
 		<div class="center">
 		<style>
@@ -222,55 +228,32 @@ h2 {
   	padding: 10px;
 	}	
 </style>
-			<label>Hours available</label>
-			<table>
-				<tr>
-					<td></td>
-					<th>Sun</th>
-					<th>Mon</th>
-					<th>Tue</th>
-					<th>Wed</th>
-					<th>Thu</th>
-					<th>Fri</th>
-					<th>Sat</th>
-				</tr>
-				<tr>
-					<th>From</th>
-					<td><input type="time" size="5" name="su_from"></td>
-					<td><input type="time" size="5" name="mo_from"></td>
-					<td><input type="time" size="5" name="tu_from"></td>
-					<td><input type="time" size="5" name="we_from"></td>
-					<td><input type="time" size="5" name="th_from"></td>
-					<td><input type="time" size="5" name="fr_from"></td>
-					<td><input type="time" size="5" name="sa_from"></td>
-				</tr>
-				<tr>
-					<th>Until</th>
-					<td><input type="time" size="5" name="su_until"></td>
-					<td><input type="time" size="5" name="mo_until"></td>
-					<td><input type="time" size="5" name="tu_until"></td>
-					<td><input type="time" size="5" name="we_until"></td>
-					<td><input type="time" size="5" name="th_until"></td>
-					<td><input type="time" size="5" name="fr_until"></td>
-					<td><input type="time" size="5" name="sa_until"></td>
-				</tr>
-			</table>
+			<label>Job Title:</label> 
+			<input type="text" name="job">
 		</div>
-	</fieldset>
-
-	<fieldset>
-		<legend>Personal Statement</legend>
-		<div class="field">
-			<label>Why do you want to do this job?</label><br>
-			<textarea name="deserve" rows="6" cols="60"></textarea>
+		<div class="center">
+		<style>
+	.center {
+  	margin: auto;
+  	width: 60%;
+  	border: 3px solid #73AD21;
+  	padding: 10px;
+	}	
+</style>
+			<label>Salary/ Hourly Rate:</label> 
+			<input type="text" name="salary">
 		</div>
-		<div class="field">
-			<label>Describe your past job experience:</label><br>
-			<textarea name="project" rows="6" cols="60"></textarea>
-		</div>
-	</fieldset>
-
+		<div class="center">
+		<style>
+	.center {
+  	margin: auto;
+  	width: 60%;
+  	border: 3px solid #73AD21;
+  	padding: 10px;
+	}
+</style>			
 	<input type="submit" value="Submit form">
+
 
 </form>
 </body>
